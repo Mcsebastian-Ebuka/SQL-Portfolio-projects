@@ -157,7 +157,7 @@ JOIN [Sales].[SalesOrderHeader] soh ON sod.SalesOrderID = soh.SalesOrderID
 WHERE sod.ProductID = p.ProductID
             AND soh.OrderDate >= DATEADD(MONTH, -3, GETDATE())
 );
--------or
+-------Sales performance by product category
 SELECT p.ProductID,p.Name AS ProductName
 FROM [Production].[Product] p
 LEFT JOIN 
